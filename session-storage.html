@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Storage</title>
+</head>
+<body>
+
+	<div id="name"></div>
+
+	<script type="text/javascript">
+
+		/*
+		items in localStorage even if the browser closes, it's cleared only when the cache is removed
+
+		if you want the items to be cleared, once you close the browser, then use session storage
+		*/
+
+		if(typeof(Storage) !== 'undefined') {
+			
+			//set a local storage item
+			sessionStorage.setItem('name', 'John Doe');
+
+			//Get Item
+			console.log(sessionStorage.getItem('name'));
+
+			//Remove an Item
+			//sessionStorage.removeItem('name');
+
+			//Check for the Item 
+			if(sessionStorage.name) {
+				document.getElementById('name').innerHTML = sessionStorage.name;
+			}
+			else {
+				document.getElementById('name').innerHTML = 'No Name Found';
+			}
+		
+		}
+
+		else {
+			console.log('Session Storage not available');
+		}
+
+		// if(typeof(Storage) !== 'undefined') {
+			
+		// 	//set a local storage item
+		// 	localStorage.setItem('name', 'John Doe');
+
+		// 	//Get Item
+		// 	console.log(localStorage.getItem('name'));
+
+		// 	//Remove an Item
+		// 	localStorage.removeItem('name');
+
+		// 	//Check for the Item 
+		// 	if(localStorage.name) {
+		// 		document.getElementById('name').innerHTML = localStorage.name;
+		// 	}
+		// 	else {
+		// 		document.getElementById('name').innerHTML = 'No Name Found';
+		// 	}
+		
+		// }
+
+		// else {
+		// 	console.log('Local Storage not available');
+		// }
+
+	</script>
+
+</body>
+</html>

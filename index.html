@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My First Webpage</title>
+		<style type="text/css">
+
+			body {
+				background: #f4f4f4;
+				font-family: arial;
+				line-height: 1.5em;
+			}
+
+			#container {
+				border: 1px #cccccc solid;
+				padding: 0 10px 0 10px;
+				/*margin-top: 30px; */
+				width: 800px;
+				margin: 30px auto;
+				overflow: hidden;
+			}
+
+			.emp {
+				color: red;
+				font-weight: bold;
+			}
+
+			.side-a {
+				float: left;
+				width: 50%;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div id="container">
+			<div class="side-a">
+				<h1>Welcome</h1>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="emp"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </span> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <span class="emp">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</span>
+				</p>
+			</div>
+			<div class="side-b">
+				<h1>Hello</h1>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span class="emp"> Lorem Ipsum has been the industry's standardown printer took a galley of type and scrambled it to make a type specimen book. </span> It has leap into electronic typesetting, remaining essentially unchanged. <span class="emp">It was popularised in thare like Aldus PageMaker including versions of Lorem Ipsum.
+					</span>
+				</p>
+			</div>
+		</div>
+
+
+
+		<h1>Registration Form</h1>
+		<form>
+			<fieldset>
+				<legend>Accounts</legend>
+				<label>Name</label><br>
+				<input type="text" name="name" required>	
+				<br><br>
+
+				<label>Email</label><br>
+				<input type="email" name="email">	
+				<br><br>
+
+				<label>Password</label><br>
+				<input type="password" name="password">	
+				<br><br>
+			</fieldset>
+
+			<fieldset>
+				<legend>User Info</legend>
+				<label>Location</label><br>
+				<select name="location">
+					<option value="MA">MA</option>
+					<option value="NY" selected>NY</option>
+					<option value="CA">CA</option>
+				</select>
+				<br><br>
+
+				<label>Gender</label><br>
+				<input type="radio" name="gender" value="Male">Male
+				<input type="radio" name="gender" value="Female" checked>Female
+				<br><br>
+
+				<label>Interests</label><br>
+				<input type="checkbox" name="interests" value="Movies">Movies
+				<input type="checkbox" name="interests" value="Music" checked>Music
+				<input type="checkbox" name="interests" value="Sports" checked>Sports
+				<input type="checkbox" name="interests" value="Art">Art
+				<br><br>
+			</fieldset>
+
+			<input type="submit" name="Submit Me">
+		</form>
+
+		<h1>Unordered List</h1>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+
+		<h1>Ordered List</h1>
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+
+		<h1>Descriptive List</h1>
+		<dl>
+			<dt>Item 1</dt>
+			<dd>Description for Item 1</dd>
+			<dt>Item 2</dt>
+			<dd>Description for Item 2</dd>
+			<dt>Item 3</dt>
+			<dd>Description for Item 3</dd>
+		</dl>
+
+		<h1>Tables</h1>
+		<table>
+			<thead>
+				<tr align="left" bgcolor="red">
+					<th width="400">Name</th>
+					<th width="300">Email</th>
+					<th width="300">Phone</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John Doe</td>
+					<td>jdoe@gmail.com</td>
+					<td>555-555-5555</td>
+				</tr>
+				<tr>
+					<td>Tom Smith</td>
+					<td>tsmith@gmail.com</td>
+					<td>555-555-6666</td>
+				</tr>
+				<tr>
+					<td>Mike Jones</td>
+					<td>mjones@gmail.com</td>
+					<td>555-555-7777</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
