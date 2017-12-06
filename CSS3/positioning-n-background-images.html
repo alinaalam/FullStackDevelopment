@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning & Background</title>
+	<style type="text/css">
+
+		.wrapper {
+			border: #000 1px solid;
+			width: 600px;
+			height: 400px;
+			left: 50px;
+			top: 100px;
+			position: relative;
+			/*background-image: url('bg.jpg');
+			background-repeat: no-repeat;
+			background-position: 100px 100px;*/
+			background: #000 url('bg.jpg') no-repeat 100px 100px;
+		}
+
+		.inside {
+			border: #ff0000 1px solid;
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 4 different kinds of position properties;
+		a) static - default
+		b) relative - relative to its normal position
+		c) fixed - relative to the viewport, it's going to stay there
+		d) absolute - relative to the nearest positioned ancestor
+	-->
+
+	<div class="wrapper">
+		<div class="inside">
+			
+		</div>
+	</div>
+</body>
+</html>

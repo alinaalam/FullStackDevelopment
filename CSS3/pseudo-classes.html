@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Classes</title>
+	<style type="text/css">
+
+		a:hover {
+			color: red;
+			font-weight: bold;
+		}
+
+		a:active {
+			color: green;
+			font-weight: bold;
+		}
+
+		.my-form input:focus {
+			background: pink;
+			width: 300px;
+		}
+
+		.my-list li:first-child {
+			color: green;
+			font-weight: bold;
+		}
+
+		.my-list li:last-child {
+			color-red;
+			font-weight: bold;
+		}
+
+		.my-list li:nth-child(3n+3) {
+			color: blue;
+			font-weight: bold;
+		}
+
+		.my-list li:nth-child(even) {
+			color: purple;
+			font-weight: bold;
+		}
+
+		.my-list li:nth-child(odd) {
+			color: green;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Pseudo classes are used to define a special state of the element</h1>
+	<a href="#">Click Me</a>
+	
+	<form class="my-form">
+		<input type="text" name="">
+	</form>
+
+	<ul class="my-list">
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+		<li>List Item</li>
+	</ul>
+
+</body>
+</html>

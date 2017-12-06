@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colors, Backgrounds & Gradients</title>
+	<style type="text/css">
+		
+		#rounded1 {
+			/*background: red;*/
+			/*this a is for alpha, it controls the opacity */
+			background: rgba(255, 90, 90, 0.7);
+			color: white;
+			width: 200px;
+			height: 200px;
+			padding: 30px;
+			/*
+			before CSS3, we had to use rounded corner images and place them on the sides
+			*/
+			border-radius: 10px; 
+		}
+
+		#rounded2 {
+			/*background: red;*/
+			/*
+			hsl: hue, saturation, lightness;
+			Hue: degree - 0(or 360) is red, 120 is green, 240 is blue;
+			Saturation: percentage - 100% is the full color;
+			Lightness: percentage - 0% is dark(black) and 100% is light(white) and 50% is the average;
+			*/
+			background: hsl(120, 100%, 75%);
+			color: white;
+			width: 200px;
+			height: 200px;
+			padding: 30px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+
+		#rounded3 {
+			/*background: red;*/
+			/* a is for opacity */
+			background: hsla(120, 100%, 50%, 0.7);
+			color: white;
+			width: 200px;
+			height: 200px;
+			padding: 30px;
+			border-radius: 50%;
+			border: 3px black solid;
+		}
+
+		img {
+			border-radius: 50%;
+		}
+
+		#border-img {
+			border: 10px solid transparent;
+			padding: 15px;
+			border-image: url('border.png') 30 round;
+		}
+
+		#my-bg {
+			background-image: url('img_flwr.gif'), url('paper.gif');
+			background-position: right bottom, left top;
+			background-repeat: no-repeat, repeat;
+			padding: 15px 200px 15px 15px;
+			/*background-size: 100px 100px;*/
+		}
+
+		#grad1 {
+			width: 500px;
+			height: 200px;
+			/*
+			you want to have some kind of default color so if your browser doesn't support gradients, it'll fall back to this
+			*/
+			background: blue;
+			background: linear-gradient(blue, black, white, pink, purple, green, yellow);
+		}
+
+		#grad2 {
+			width: 500px;
+			height: 200px;
+			background: blue;
+			background: linear-gradient(to right, blue, black);
+		}
+
+		#grad3 {
+			width: 500px;
+			height: 200px;
+			background: blue;
+			background: linear-gradient(to bottom right, blue, black);
+		}
+
+		#grad4 {
+			width: 500px;
+			height: 500px;
+			background: blue;
+			/*background: radial-gradient(white 5%, blue 15%, black 60%);*/
+			background: repeating-radial-gradient(circle, white 5%, blue 15%, black 60%);
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="rounded1">Rounded Corners</div>
+	<br>
+	<div id="rounded2">Rounded Corners</div>
+	<br>
+	<div id="rounded3">Rounded Corners</div>
+	<br>
+
+	<img src="bird.jpg">
+
+	<div id="border-img">This div uses an image border</div>
+
+	<br>
+
+	<div id="my-bg">
+		<h1>Welcome</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</div>
+
+	<br>
+
+	<div id="grad1"></div><br>
+	<div id="grad2"></div><br>
+	<div id="grad3"></div><br>
+	<div id="grad4"></div><br>
+
+</body>
+</html>
